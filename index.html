@@ -4,24 +4,28 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mobile-First Responsive Layout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body id="top">
     <header>
         <div class="header-nav">
-            <div class="student_name">
+            <h1>
                 Student Name
-            </div>
+            </h1>
             <nav>
                 <a href="#top">Home</a>
                 <a href="#portfolio">Portfolio</a>
                 <a href="#contact">Contact</a>
             </nav>
         </div>
+
+        <img src="images/responsive-layout-profile.png" alt="Picture of Student"/>
         <p>
             Hi! I'm a front-end developer who loves responsive design and css. I recently finished learning front-end web developmenat Treehouse and am excited to put all my skills to use!
         </p>
-        <img src="images/responsive-layout-profile.png" alt="Picture of Student"/>
     </header>
     <main id="portfolio">
         <h2>Portfolio</h2>
@@ -60,19 +64,20 @@
     </main>
     <footer id="contact">
         <h2>Contact</h2>
-        <p>If you're interested inc hatting or want more information about what I've been working on, I'd love to hear from you!</p>
+        <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
         <p>Phone <b>+1 (111) 555-1234</b></p>
         <p>Email <b>email@yoursite.com</b></p>
         <div class="footer-nav">
             <div class="student_name">
-                Student Name
+                <p>Student Name</p>
             </div>
             <nav>
-                <a href="#top">Home</a>
-                <a href="#top">Back to Top</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#contact">Contact</a>
+                <a href="#top" class="xs-hidden">Home</a>
+                <a href="#top" class="xs-show">Back to Top</a>
+                <a href="#portfolio" class="xs-hidden">Portfolio</a>
+                <a href="#contact" class="xs-hidden">Contact</a>
             </nav>
+            <div class="clearfix"></div>
         </div>
     </footer>
 </body>
