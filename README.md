@@ -10,3 +10,4 @@ You will write CSS to style the page for a small mobile device first. Then, usin
 - A new background color
 - Color of the contact info changed
 - Additional Google font used for Student Name
+- Add skill section
